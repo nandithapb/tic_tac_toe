@@ -19,14 +19,18 @@ for (var i = 0; i < values.length; i++) {
       //if temp equals to an even value then print X
       if (temp % 2 === 0) {
         this.textContent = "X";
+        this.style.color="red";
         document.getElementById("turn").textContent = pl2 + "'s turn";
+        turn.style.color="black";
         getWinner();
         temp = temp + 1;
       }
       //if temp equals to an odd value then print O
       else {
         this.textContent = "O";
+        this.style.color="black";
         document.getElementById("turn").textContent = pl1 + "'s turn";
+        turn.style.color="red";
         getWinner();
         temp = temp + 1;
       }
@@ -81,6 +85,7 @@ function setWinner(a1, a2, a3) {
   } else if (a1.textContent === "O") {
     document.getElementById("turn").innerHTML = pl2 + " won the game";
   }
+    document.getElementById("congrats").style.visibility = "visible";
 }
 //function for replay
 function playagain() {

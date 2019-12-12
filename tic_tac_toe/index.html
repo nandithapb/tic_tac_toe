@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <!-- stylesheet -->
   <link rel="stylesheet" href="stylesheet.css">
@@ -21,7 +20,7 @@
     <form action="#">
     <h3>player1 :</h3><input type="text" id="player1" placeholder="player1" onblur="Player1()">
     <h3>player2 :</h3><input type="text" id="player2" placeholder="player2" onblur="Player2()"><br>
-    <input style="background-color:#ff80df; color:#cc0099; font-size:20px; margin:10px auto" type="submit" name="submit" value="submit" >
+    <input style="background-color:red; color:black; font-size:20px; margin:10px auto" type="submit" name="submit" value="submit" >
     </form>
   </div>
   <!-- division for game -->
@@ -36,9 +35,14 @@
     <div class="box" id="b8"></div>
     <div class="box" id="b9"></div>
     <span class="message" id="turn"></span>
+    <div class="gif">
+
+      <center><img src="congrats.gif" alt="animated" id="congrats" style="visibility:hidden"/></center>
+</div>
   </div>
   <!-- button for restart the game -->
-  <button onclick="playagain()" >Play Again</button>
+    <button onclick="playagain()" style="background-color:red; color:black;">Play Again</button>
+
   <span class="test"></span>
   <!-- javascript -->
   <script type="text/javascript" src="javascript.js"></script>
